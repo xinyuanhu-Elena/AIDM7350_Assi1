@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Chalkboard SE;
+    text-align: center;
+
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.4) 0px,
+            rgba(255,255,255,0.4) 1px,
+            transparent 1px,
+            transparent 40px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255,255,255,0.4) 0px,
+            rgba(255,255,255,0.4) 1px,
+            transparent 1px,
+            transparent 40px
+        ),
+        linear-gradient(to bottom, #f7c3de, #f2eaed);
+}
+
+.top-section {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0) 60%,
+            #f8d7e8 100%
+        ),
+        url("https://wallpaperm.cmcm.com/2870c08503e46cde530bc4789144287e.jpg");
+
+    background-size: cover;
+    background-position: center 13%;
+}
+
+/*Music*/
+.music-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  cursor: pointer;
+  user-select: none;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.music-btn:hover{
+  transform: scale(1.05);
+}
+
+
+/* This is the Toptitle*/
+.Firsttitle {
+    font-family: Apple Chancery;
+    font-weight: bold;
+    font-size: 500%;
+    color: #f244ca;
+
+    -webkit-text-stroke: 2px #8e004f;
+
+    background: rgba(248, 248, 248, 0.35);
+    padding: 20px 60px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(4px);
+}
+/* This is the Toptitle*/
+
+/* This is the navbar*/
+.navbar {  
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 30px;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #d63384;
+    font-size: 20px;
+}
+.navbar a:hover {
+    color: #8e2a64;
+}
+/* This is the navbar*/
+
+/*About all titles*/
+h2 {
+    color: rgb(103, 103, 226);
+    font-size: 28px;
+
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(6px);
+}
+/*About all titles*/
+
+/*Career Part*/
+.career-section {
+    width: 75%;
+    margin: auto;
+}
+
+.career-image {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    margin-right: -40px;
+}
+.career-image img {border-radius: 30px;}
+
+.career-text {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 20px;
+}
+/*Career Part*/
+
+/* Album */
+ul {
+    list-style: none;
+    padding: 0;
+}
+/* Album */
+
+/* Achievement */
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+.achievement-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 30px 0;
+}
+.achievement-text {
+    width: 30%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+}
+.achievement-image img {
+    width: 350px;
+    border-radius: 20px;
+}
+/* Achievement */
+
+
+.standout {
+    color: rgb(127, 58, 232);
+}
+
+p:hover {
+    background: rgb(230, 245, 249);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+ul li {
+    font-size: 18px;
+    margin: 6px 0;
+}
+ol li {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+/* Images*/
+img {
+    margin: 10px;
+}
+
+.img1:hover {
+    clip-path: polygon(
+        50% 90%, 
+        10% 55%, 
+        10% 30%, 
+        30% 10%, 
+        50% 25%, 
+        70% 10%, 
+        90% 30%, 
+        90% 55%
+    );
+}
+.img2:hover {border-radius: 50px;}
+.img3:hover {opacity: 0.7;}
+.img4:hover {filter: grayscale(70%);}
+.img5:hover {filter: blur(4px);}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taylor Swift Introduction</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+
+<body>
+<audio id="bgm" loop preload="auto">
+  <source src="Taylor.mp3" type="audio/mpeg">
+</audio>
+<div class="music-btn" onclick="toggleMusic()" id="musicBtn">
+    🎵
+</div>
+
+<div class="hero"></div>
+<div class="top-section">
+    <h1 class="Firsttitle">Taylor Swift: Global Pop singer 💗</h1>
+</div>
+<div class="navbar">
+    <a href="#basic">Basic</a> |
+    <a href="#career">Career</a> |
+    <a href="#albums">Albums</a> |
+    <a href="#achievements">Achievements</a> |
+    <a href="#video">Video</a>
+   </div>
+<!-- This is Basic Part -->
+<h2 id="basic" class="standout">1. Basic Information</h2>
+<p>
+💕Taylor Swift is an American singer-songwriter widely recognized for her narrative songwriting and emotional lyrics. She often writes about personal experiences, relationships, and self-growth, which makes her music relatable to millions of fans around the world.
+She was born on December 13, 1989, in Pennsylvania. From a young age, she showed a strong interest in music and began performing in local events before moving to Nashville to pursue her dream of becoming a professional artist.💫
+</p>
+<p>👉Visit <a href="https://www.taylorswift.com">Taylor's world</a></p>
+
+<!-- This is Career Part -->
+<h2 id="career">2. Career</h2>
+<div class="career-section">
+    <div class="career-image">
+        <img src="https://i.pinimg.com/736x/44/75/02/447502cbb213f5b5140ad82cf552715e.jpg" width="210" height="270">
+    </div>
+    <div class="career-text">
+        <p>
+        Taylor Swift began her career as a country singer when she was still a teenager. 
+        Her early albums quickly gained popularity, especially among young listeners.
+        </p>
+        <p>
+        As her career developed, she gradually transitioned from country music to mainstream pop. 
+        Her album "1989" marked a major turning point, establishing her as a global pop superstar.
+        </p>
+        <p>
+        Over the years, she has continued to experiment with different styles, including indie and alternative sounds. 
+        Her ability to reinvent herself while maintaining her storytelling style has helped her remain relevant in the music industry.
+        </p>
+    </div>
+</div>
+
+<!-- This is Albums Part -->
+<h2 id="albums">3. Albums</h2>
+<h3>Top Albums</h3>
+<ul>
+    <li>Fearless</li>
+    <li>1989</li>
+    <li>Reputation</li>
+    <li>Lover</li>
+    <li>Midnights</li>
+</ul>
+<img src="https://tse2.mm.bing.net/th/id/OIP.X4KSzpciw50XJ2dCTw8FngHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="13%"  height="13%" class="img1">
+<img src="https://tse2.mm.bing.net/th/id/OIP.lrjp4p7-KtbIEfJjJTlstAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="13%"  height="13%" class="img2">
+<img src="https://i0.wp.com/lyricsfa.com/wp-content/uploads/2017/11/taylor-swift-e28093-reputation.jpg?fit=1240%2C1248&ssl=1" width="13%"  height="13%" class="img3">
+<img src="https://tse2.mm.bing.net/th/id/OIP.b-UAYI26cEwbQe3TcA1YAAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" width="13%"  height="13%" class="img4">
+<img src="https://images.genius.com/9dc8daa62f94e5ecb8f514efe27c66c4.1000x1000x1.png" width="13%"  height="13%" class="img5">
+
+<!-- This is Achievement Part -->
+<h2 id="achievements">4. Achievements</h2>
+<div class="achievement-section" id="achievements">
+
+    <div class="achievement-text">
+        <ol>
+            <li>Multiple Grammy Awards winner</li>
+            <li>Billboard Artist of the Year</li>
+            <li>One of the best-selling music artists worldwide</li>
+        </ol>
+    </div>
+
+    <div class="achievement-image">
+        <img src="https://th.bing.com/th/id/R.98b7bf49076301478e0ef258f9ae3176?rik=95yHEtCvZo2ijw&riu=http%3a%2f%2f25.media.tumblr.com%2ftumblr_lzf6i5IGO41qb86xno1_1280.jpg&ehk=IQepAlm1MjtMUveZKFGlVfItPG5v7eswYNi%2feKtWMmc%3d&risl=&pid=ImgRaw&r=0">
+    </div>
+
+</div>
+
+
+<!-- This is Video Part -->
+<h2 id="video">5. Watch Her Fantastic Video 🥳</h2>
+<iframe width="988" height="556" src="https://www.youtube.com/embed/5UBl0rLEl0w" title="Taylor Swift | The Eras Tour (Taylor’s Version) | Official Trailer | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!-- Music Part -->
+<script>
+  const bgm = document.getElementById("bgm");
+  const btn = document.getElementById("musicBtn");
+
+  function toggleMusic() {
+    if (bgm.paused) {
+      bgm.play().then(() => {
+        btn.innerHTML = "⏸";
+      }).catch((err) => {
+        console.log(err);
+        alert("Playback failed: Please check if Console/Network is 404 or blocked");
+      });
+    } else {
+      bgm.pause();
+      btn.innerHTML = "🎵";
+    }
+  }
+</script>
+</body>
+</html>
